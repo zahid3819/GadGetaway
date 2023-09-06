@@ -3,6 +3,7 @@ import { FaTruckMoving } from 'react-icons/fa';
 import { AiOutlineHeart } from 'react-icons/ai';
 import { BsBagCheck } from 'react-icons/bs';
 import { AiOutlineUser } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 import './nav.css'
 
 const Nav = () => {
@@ -32,8 +33,8 @@ const Nav = () => {
                             <p>Hello, User</p>
                         </div>
                         <div className='second-icon'>
-                            <p><AiOutlineHeart /></p>
-                            <p><BsBagCheck /> </p>
+                            <Link to="/" className='link'><AiOutlineHeart /></Link>
+                            <Link to="/cart" className='link'><BsBagCheck /></Link>
                         </div>
                     </div>
                 </div>
